@@ -63,9 +63,7 @@ def get_new_sample(num_attributes):
 
 
 def ask_yes_no(prompt):
-    '''
-
-     while True:
+    while True:
         answer = input(prompt).strip().lower()
         if answer in ("yes", "y"):
             return True
@@ -73,14 +71,6 @@ def ask_yes_no(prompt):
             return False
         else:
             print("  Please answer yes or no.")
-        '''
-
-    answer = input(prompt).strip().lower()
-    while answer not in ["yes", "no"]:
-        print("Please answer yes or no.")
-        answer = input(prompt).strip().lower() not in ("yes", "no")
-    else:
-        return answer in ("yes", "y")
 
 
 def plot_accuracy_chart(training_data, test_data, current_k):
